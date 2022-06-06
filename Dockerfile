@@ -4,6 +4,7 @@ LABEL org.opencontainers.image.source https://github.com/i33558493/ip_derper
 
 WORKDIR /app
 
+COPY hosts /etc/hosts
 ADD tailscale /app/tailscale
 
 # build modified derper
